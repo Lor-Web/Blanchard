@@ -1,0 +1,76 @@
+@import "shared/normalize.css";
+@import "shared/root.css";
+@import "shared/fonts.css";
+
+@import "components/header.css";
+@import "components/hero.css";
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--white);
+}
+
+.title {
+  font: var(--font-title_desktop);
+}
+
+.title_section {
+  font: var(--font-title-section_desktop);
+}
+
+.title_block {
+  font: var(--font-medium);
+}
+
+.description {
+  font: var(--font-base_desktop);
+}
+
+.list {
+  display: flex;
+}
+
+.item_link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* STATES: */
+.default_link {
+  transition: color 0.2s ease-in, background 0.2s ease-in, outline 0.2s ease-in;
+  outline-color: var(--purple-dark);
+}
+
+.default_link:hover {
+  color: var(--pink);
+}
+
+.default_link:focus {
+  color: var(--white);
+  background: var(--purple-dark);
+  outline: 3px solid var(--purple-dark);
+  outline-offset: -1px;
+}
+
+.default_link:active {
+  color: var(--purple-dark);
+}
+
+/* CONTAINER: */
+.wrapper {
+  margin: auto;
+  max-width: 1920px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+  padding-right: 160px;
+  padding-left: 160px;
+  max-width: 1920px;
+}
